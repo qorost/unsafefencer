@@ -1,0 +1,15 @@
+[package]
+name = "ptester"
+version = "0.1.0"
+authors = ["Huang on Nuc <zjhuang.davis@gmail.com>"]
+
+[features]
+debugmyplugin =[]
+showallwarning =[]
+
+[dependencies]
+fencer = { path = "../../fencer"}
+fencer_support = { path = "../../fencer/support"}
+
+
+

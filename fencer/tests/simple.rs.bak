@@ -1,0 +1,89 @@
+//
+// simple.rs
+// Copyright (C) 2017 huang <huang@huang-Precision-WorkStation-T3500>
+// Distributed under terms of the MIT license.
+//
+
+#![feature(plugin)]
+#![plugin(myplugin)]
+
+#![allow(dead_code)]
+#![allow(unused_variables)]
+
+
+
+#[checkderef]
+
+#[cfg(test)]
+mod tests {
+    /*
+	#[test]
+	fn it_works() {
+        //hello!();
+        //#[into_multi_foo]
+
+        
+        #[checkderef]
+        struct CCC {x:i32,y:i32,z:i32}
+
+        struct AAA {
+            x: i32,
+        }
+
+        let a = AAA {x:1,};
+
+        //let b:B = B {x:1};
+        //println!("B.x = {:?}",b.x);
+        //assert_eq!(b.x,1);
+        //let x: Foo2 = Foo2::Bar2;
+	}
+    */
+
+    struct A {x:i32,}
+
+    fn test_deref_typs() {
+        let a:A = A{x= 12};
+
+        let ptra = &a as *const A;
+
+        //read of raw pointer
+        let tmp = unsafe { *ptra};
+        
+    }
+
+
+    #[test]
+    fn test_unsafe_fun () {
+        unsafe fn goodbay() {
+            let x = &32 as *mut i32;
+
+            // read of raw pointer
+            let a = *x;
+
+            //write of raw pointer
+            *x = 1;
+        }
+
+        /*
+            let x:i32 = 12;
+            let raw = &x as *const i32;
+            unsafe {println!("raw is {}",*raw)}
+
+
+            let y : i32 = 12;
+            let yraw = &y as *mut i32;
+            unsafe {*yraw = 10;}
+        
+        }
+*/
+    
+    }
+}
+
+
+fn main () {
+    //#[Readable]
+    println!("Hello World, Rust Plugins!");
+
+
+}

@@ -1,0 +1,293 @@
+   Compiling utf8-ranges v0.1.3
+   Compiling matches v0.1.4
+   Compiling itoa v0.3.1
+   Compiling winapi v0.2.8
+   Compiling rustc-serialize v0.3.23
+   Compiling quote v0.3.15
+   Compiling num-traits v0.1.37
+   Compiling log v0.3.7
+   Compiling libc v0.2.21
+   Compiling futures v0.1.11
+   Compiling winapi-build v0.1.1
+   Compiling serde v0.9.11
+   Compiling kernel32-sys v0.2.2
+   Compiling regex-syntax v0.3.9
+   Compiling gcc v0.3.45
+   Compiling dtoa v0.4.1
+   Compiling errno v0.1.8
+   Compiling num_cpus v0.2.13
+   Compiling thread-id v2.0.0
+   Compiling rdkafka-sys v0.9.4-0 (file:///home/huang/Desktop/Rust/plugins/mylint/tests/new_git_repo/rust-rdkafka/rdkafka-sys)
+   Compiling unicode-xid v0.0.4
+   Compiling thread_local v0.2.7
+   Compiling synom v0.11.3
+   Compiling pkg-config v0.3.9
+   Compiling syn v0.11.9
+   Compiling memchr v0.1.11
+   Compiling aho-corasick v0.5.3
+   Compiling lz4-sys v1.0.1+1.7.3
+   Compiling libz-sys v1.0.13
+   Compiling openssl-sys v0.9.9
+   Compiling regex v0.1.80
+   Compiling toml v0.2.1
+   Compiling serde_json v0.9.9
+   Compiling serde_codegen_internals v0.14.1
+   Compiling mylint v0.1.0 (file:///home/huang/Desktop/Rust/plugins/mylint)
+warning: unused or unknown feature
+ --> /home/huang/Desktop/Rust/plugins/mylint/src/lib.rs:7:12
+  |
+7 | #![feature(i128)]
+  |            ^^^^
+  |
+  = note: #[warn(unused_features)] on by default
+
+warning: unused import: `LintContext`
+  --> /home/huang/Desktop/Rust/plugins/mylint/src/lib.rs:28:33
+   |
+28 | use rustc::lint::{EarlyContext, LintContext, LintPass, EarlyLintPass, EarlyLintPassObject, LintArray};
+   |                                 ^^^^^^^^^^^
+   |
+   = note: #[warn(unused_imports)] on by default
+
+warning: unused import: `syntax::abi::Abi`
+  --> /home/huang/Desktop/Rust/plugins/mylint/src/lib.rs:38:5
+   |
+38 | use syntax::abi::Abi;
+   |     ^^^^^^^^^^^^^^^^
+   |
+   = note: #[warn(unused_imports)] on by default
+
+warning: unused import: `std::fmt`
+  --> /home/huang/Desktop/Rust/plugins/mylint/src/lib.rs:45:5
+   |
+45 | use std::fmt;
+   |     ^^^^^^^^
+   |
+   = note: #[warn(unused_imports)] on by default
+
+warning: unknown lint: `missing_docs_in_private_items`
+ --> /home/huang/Desktop/Rust/plugins/mylint/src/utils/comparisons.rs:3:9
+  |
+3 | #![deny(missing_docs_in_private_items)]
+  |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: #[warn(unknown_lints)] on by default
+
+warning: unknown lint: `cast_sign_loss`
+   --> /home/huang/Desktop/Rust/plugins/mylint/src/utils/conf.rs:98:21
+    |
+98  |             #[allow(cast_sign_loss)]
+    |                     ^^^^^^^^^^^^^^
+...
+160 | define_Conf! {
+    | - in this macro invocation
+    |
+    = note: #[warn(unknown_lints)] on by default
+
+warning: unknown lint: `missing_docs_in_private_items`
+ --> /home/huang/Desktop/Rust/plugins/mylint/src/utils/conf.rs:3:9
+  |
+3 | #![deny(missing_docs_in_private_items)]
+  |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: #[warn(unknown_lints)] on by default
+
+warning: unknown lint: `missing_docs_in_private_items`
+ --> /home/huang/Desktop/Rust/plugins/mylint/src/utils/constants.rs:3:9
+  |
+3 | #![deny(missing_docs_in_private_items)]
+  |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: #[warn(unknown_lints)] on by default
+
+warning: unknown lint: `wrong_self_convention`
+  --> /home/huang/Desktop/Rust/plugins/mylint/src/utils/sugg.rs:39:9
+   |
+39 | #[allow(wrong_self_convention)] // ok, because of the function `as_ty` method
+   |         ^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: #[warn(unknown_lints)] on by default
+
+warning: unknown lint: `missing_docs_in_private_items`
+ --> /home/huang/Desktop/Rust/plugins/mylint/src/utils/sugg.rs:2:9
+  |
+2 | #![deny(missing_docs_in_private_items)]
+  |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: #[warn(unknown_lints)] on by default
+
+warning: unknown lint: `print_stdout`
+ --> /home/huang/Desktop/Rust/plugins/mylint/src/utils/inspector.rs:1:10
+  |
+1 | #![allow(print_stdout, use_debug)]
+  |          ^^^^^^^^^^^^
+  |
+  = note: #[warn(unknown_lints)] on by default
+
+warning: unknown lint: `use_debug`
+ --> /home/huang/Desktop/Rust/plugins/mylint/src/utils/inspector.rs:1:24
+  |
+1 | #![allow(print_stdout, use_debug)]
+  |                        ^^^^^^^^^
+  |
+  = note: #[warn(unknown_lints)] on by default
+
+warning: unknown lint: `missing_docs_in_private_items`
+ --> /home/huang/Desktop/Rust/plugins/mylint/src/utils/higher.rs:3:9
+  |
+3 | #![deny(missing_docs_in_private_items)]
+  |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: #[warn(unknown_lints)] on by default
+
+warning: unknown lint: `cast_possible_wrap`
+   --> /home/huang/Desktop/Rust/plugins/mylint/src/consts.rs:162:9
+    |
+162 | #[allow(cast_possible_wrap)]
+    |         ^^^^^^^^^^^^^^^^^^
+    |
+    = note: #[warn(unknown_lints)] on by default
+
+warning: unknown lint: `cast_possible_truncation`
+ --> /home/huang/Desktop/Rust/plugins/mylint/src/consts.rs:1:10
+  |
+1 | #![allow(cast_possible_truncation)]
+  |          ^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: #[warn(unknown_lints)] on by default
+
+   Compiling serde_derive v0.9.11
+   Compiling env_logger v0.3.5
+   Compiling rdkafka v0.7.0 (file:///home/huang/Desktop/Rust/plugins/mylint/tests/new_git_repo/rust-rdkafka)
+FnKind::Method ptr
+warning: This func has return reference, but the inputs are immutable
+  --> src/client.rs:75:5
+   |
+75 |       pub fn ptr(&self) -> *mut RDKafka {
+   |  _____^ starting here...
+76 | |         self.ptr
+77 | |     }
+   | |_____^ ...ending here
+   |
+   = note: #[warn(test_lint)] on by default
+   = help: for further information visit https://github.com/Manishearth/rust-clippy/wiki#test_lint
+
+FnKind::Method native_ptr
+warning: This func has return reference, but the inputs are immutable
+   --> src/client.rs:116:5
+    |
+116 |       pub fn native_ptr(&self) -> *mut RDKafka {
+    |  _____^ starting here...
+117 | |         self.native.ptr
+118 | |     }
+    | |_____^ ...ending here
+    |
+    = note: #[warn(test_lint)] on by default
+    = help: for further information visit https://github.com/Manishearth/rust-clippy/wiki#test_lint
+
+FnKind::Method ptr
+warning: This func has return reference, but the inputs are immutable
+  --> src/config.rs:65:5
+   |
+65 |       pub fn ptr(&self) -> *mut RDKafkaConf {
+   |  _____^ starting here...
+66 | |         self.ptr.expect("Pointer to native Kafka client config used after free")
+67 | |     }
+   | |_____^ ...ending here
+   |
+   = note: #[warn(test_lint)] on by default
+   = help: for further information visit https://github.com/Manishearth/rust-clippy/wiki#test_lint
+
+FnKind::Method ptr_mut
+warning: This func has return reference, but the inputs are immutable
+  --> src/config.rs:70:5
+   |
+70 |       pub fn ptr_mut(mut self) -> *mut RDKafkaConf {
+   |  _____^ starting here...
+71 | |         self.ptr.take().expect("Pointer to native Kafka client config used after free")
+72 | |     }
+   | |_____^ ...ending here
+   |
+   = note: #[warn(test_lint)] on by default
+   = help: for further information visit https://github.com/Manishearth/rust-clippy/wiki#test_lint
+
+FnKind::Method set
+FnKind::Method set_default_topic_config
+FnKind::Method set_log_level
+FnKind::Method set
+FnKind::Method ptr
+warning: This func has return reference, but the inputs are immutable
+  --> src/message.rs:23:5
+   |
+23 |       pub fn ptr(&self) -> *mut RDKafkaMessage {
+   |  _____^ starting here...
+24 | |         self.ptr
+25 | |     }
+   | |_____^ ...ending here
+   |
+   = note: #[warn(test_lint)] on by default
+   = help: for further information visit https://github.com/Manishearth/rust-clippy/wiki#test_lint
+
+FnKind::Method ptr
+warning: This func has return reference, but the inputs are immutable
+  --> src/producer.rs:52:5
+   |
+52 |       fn ptr(&self) -> *mut RDKafkaTopic {
+   |  _____^ starting here...
+53 | |         self.ptr
+54 | |     }
+   | |_____^ ...ending here
+   |
+   = note: #[warn(test_lint)] on by default
+   = help: for further information visit https://github.com/Manishearth/rust-clippy/wiki#test_lint
+
+FnKind::Method native_ptr
+warning: This func has return reference, but the inputs are immutable
+   --> src/producer.rs:251:5
+    |
+251 |       fn native_ptr(&self) -> *mut RDKafka {
+    |  _____^ starting here...
+252 | |         self.inner.client.native_ptr()
+253 | |     }
+    | |_____^ ...ending here
+    |
+    = note: #[warn(test_lint)] on by default
+    = help: for further information visit https://github.com/Manishearth/rust-clippy/wiki#test_lint
+
+FnKind::Method native_ptr
+warning: This func has return reference, but the inputs are immutable
+   --> src/producer.rs:444:5
+    |
+444 |       fn native_ptr(&self) -> *mut RDKafka {
+    |  _____^ starting here...
+445 | |         self.inner.producer.native_ptr()
+446 | |     }
+    | |_____^ ...ending here
+    |
+    = note: #[warn(test_lint)] on by default
+    = help: for further information visit https://github.com/Manishearth/rust-clippy/wiki#test_lint
+
+FnKind::Method create_native_topic_partition_list
+warning: This func has return reference, but the inputs are immutable
+   --> src/topic_partition_list.rs:100:5
+    |
+100 |     pub fn create_native_topic_partition_list(&self) -> *mut RDKafkaTopicPartitionList {
+    |     ^
+    |
+    = note: #[warn(test_lint)] on by default
+    = help: for further information visit https://github.com/Manishearth/rust-clippy/wiki#test_lint
+
+warning: use of deprecated item: renamed to `send`
+   --> src/producer.rs:319:12
+    |
+319 |         tx.complete(status);
+    |            ^^^^^^^^
+    |
+    = note: #[warn(deprecated)] on by default
+
+`mylint` finished,
+                 266 functions in total,
+                 13 have mut return refererance, 
+                 9 are with immutable inputs,
+                 after `mylint` pass.
+    Finished dev [unoptimized + debuginfo] target(s) in 44.73 secs

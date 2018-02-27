@@ -1,0 +1,16 @@
+[package]
+name = "fencer"
+version = "0.1.0"
+authors = ["Zhijian Huang <zjhuang.davis@gmail.com>"]
+
+[lib]
+crate-type = [ "dylib" ]
+path =  "src/lib.rs"
+plugin = true
+
+
+[features]
+debugmyplugin =[]
+
+[dependencies]
+fencer_support = { path = "support"}

@@ -1,0 +1,16 @@
+[package]
+name = "unsafefencer"
+version = "0.1.0"
+authors = ["Zhijian Huang <zjhuang.davis@gmail.com>"]
+
+[features]
+debugmyplugin =[]
+showallwarning =[]
+
+[dependencies]
+myplugin = {path = "myplugin"}
+myplugin_support = { path = "myplugin/support"}
+
+#rand = "0.3.15"
+
+
