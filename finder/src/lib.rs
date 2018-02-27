@@ -83,21 +83,6 @@ mod reexport {
     pub use syntax::ast::{Name, NodeId};
 }
 
-/// **What it does:** Checks for instances of vulnerable `mut` return references.
-///
-/// **Why is this bad?** `mut` return reference may be used to make immutable reference mutable,
-/// which violate the mutability rules
-///
-/// **Known problems:** None.
-///
-/// **Example:**
-/// ```rust
-/// pub fn as_mut_slice(&self) -> &mut [T] {
-///     unsafe {
-///     slice::from_raw_parts_mut(self.ptr as *mut T, self.len())
-///     }
-/// }
-/// ```
 declare_lint!(DECL_MUT, Warn, "Warn about mutting declarations");
 
 
@@ -274,11 +259,6 @@ fn display_fnkind_info(fnkind: ast_visit::FnKind) {
 
 impl EarlyLintPass for Pass {
     fn check_item(&mut self, cx: &EarlyContext, it: &ast::Item) {
-        /*if it.ident.name.as_str() == "lintme" {
-            cx.span_lint(DECL_MUT, it.span, "item is named `lintme`");
-        }*/
-        //cx.span_lint(DECL_MUT, it.span, "item is named x");
-        //println!("inside check_item");
         self.running_item = Some(it.clone());
     }
 
